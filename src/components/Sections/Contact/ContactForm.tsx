@@ -40,7 +40,7 @@ const ContactForm: FC = memo(() => {
         "from_email": data.email,
         "message": data.message
       }
-      emailjs.send(service_id!, template_id!, template_params, public_key!)
+      emailjs.send(service_id, template_id, template_params, public_key)
       .then((result) => {
           console.log(result.text);
           alert("Message sent successfully! I'll get back to you as soon as possible. :)");
