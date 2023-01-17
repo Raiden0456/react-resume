@@ -36,8 +36,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Raiden0456 Resume',
+  description: "Resume of Vrezh Babakekhian, a Full Stack Software Engineer from Armenia/Russia.",
 };
 
 /**
