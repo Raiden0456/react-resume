@@ -246,9 +246,9 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'SainDev',
+      text: 'Had great time with Vrezh. Easy to work with, stubborn in a good way, and a very fun guy in general.',
+      image: 'https://avatars.githubusercontent.com/u/1188424?v=4',
     },
     {
       name: 'Jane Doe',

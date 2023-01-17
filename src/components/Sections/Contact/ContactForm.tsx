@@ -1,5 +1,6 @@
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 import emailjs from 'emailjs-com';
+
 interface FormData {
   name: string;
   email: string;
@@ -28,7 +29,6 @@ const ContactForm: FC = memo(() => {
     },
     [data],
   );
-
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
