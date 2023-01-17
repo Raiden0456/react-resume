@@ -112,7 +112,7 @@ export const aboutData: About = {
       text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)',
       Icon: AcademicCapIcon,
     },
-    {label: 'Employment', text: 'Face2Une™. remote', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'Face2Une™ remote', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -168,6 +168,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'Node.js',
         level: 6,
+      },
+      {
+        name: 'mySQL & PostgreSQL',
+        level: 7,
       },
     ],
   },
@@ -242,6 +246,12 @@ export const experience: TimelineItem[] = [
         <li>Worked on urgent front/back end features.</li>
       </ul>
     ),
+  },
+  {
+    date: 'November 2022 - Present',
+    location: 'Face2Une™',
+    title: 'Lead Customer Relationship System developer',
+    content: <p>Currently developing a complex CRM system (Node.js + React) for a beauty saloon.</p>,
   },
 ];
 
