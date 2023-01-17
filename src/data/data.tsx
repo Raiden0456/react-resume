@@ -238,7 +238,7 @@ export const experience: TimelineItem[] = [
         <li>Modified/Created new, sections in relational database.</li>
         <li>Implemented new features, complex classes and controllers for the company's own CRM system.</li>
         <li>Was responsible for code debugging.</li>
-        <li>Managed migration from PhP version 6 to 7.3</li>
+        <li>Managed migration from PhP version 5 to 7.4</li>
         <li>
           Closely cooperated with front end developers wherever there was a need to create from ground up a new section
           in the system.
