@@ -65,12 +65,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100"><a href="https://www.face2une.com/">Face2Une</a></strong> as a lead CRM developer.
+        I'm a Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
+        currently working at{' '}
+        <strong className="text-stone-100">
+          <a href="https://www.face2une.com/">Face2Une</a>
+        </strong>{' '}
+        as a lead CRM developer.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can find me in <strong className="text-stone-100">Barcelona</strong>,
-        exploring city on my <strong className="text-stone-100">OneWheel</strong>, or sitting at home chilling and playing videogames.
+        In my free time time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city
+        on my <strong className="text-stone-100">OneWheel</strong>, or sitting at home chilling and playing videogames.
       </p>
     </>
   ),
@@ -103,7 +107,11 @@ export const aboutData: About = {
     {label: 'Age', text: '21', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Armenian / Russian', Icon: FlagIcon},
     {label: 'Interests', text: 'Motocross, snowboard, EV boards, videogames, bass guitar', Icon: SparklesIcon},
-    {label: 'Study', text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)', Icon: AcademicCapIcon},
+    {
+      label: 'Study',
+      text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)',
+      Icon: AcademicCapIcon,
+    },
     {label: 'Employment', text: 'Face2Une™. remote', Icon: OfficeBuildingIcon},
   ],
 };
@@ -203,8 +211,9 @@ export const education: TimelineItem[] = [
     date: 'September 2019 - July 2023',
     location: 'Moscow - remote',
     title: 'Higher School of Economics',
-    content: <p>Currently studying on double degree Data Scientist program, together with
-    London School of Economics(LSE).</p>,
+    content: (
+      <p>Currently studying on double degree Data Scientist program, together with London School of Economics(LSE).</p>
+    ),
   },
 ];
 
@@ -213,11 +222,7 @@ export const experience: TimelineItem[] = [
     date: 'May 2020 - September 2020',
     location: 'ООО "Kinoprokat", "Moscow" cinema',
     title: 'System administrator assistant',
-    content: (
-      <p>
-        Assisted System administrator with maintaining Cinema's Database.
-      </p>
-    ),
+    content: <p>Assisted System administrator with maintaining Cinema's Database.</p>,
   },
   {
     date: 'January 2022 - August 2022',
@@ -227,12 +232,13 @@ export const experience: TimelineItem[] = [
       <ul>
         <li>Maintained MySQL Database.</li>
         <li>Modified/Created new, sections in relational database.</li>
-        <li>Implemented new features, complex classes and controllers for the
-company's own CRM system.</li>
+        <li>Implemented new features, complex classes and controllers for the company's own CRM system.</li>
         <li>Was responsible for code debugging.</li>
         <li>Managed migration from PhP version 6 to 7.3</li>
-        <li>Closely cooperated with front end developers wherever there was a need to
-create from ground up a new section in the system.</li>
+        <li>
+          Closely cooperated with front end developers wherever there was a need to create from ground up a new section
+          in the system.
+        </li>
         <li>Worked on urgent front/back end features.</li>
       </ul>
     ),
@@ -269,7 +275,8 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Hello there, here is my contact information. Feel free to contact me if you have any questions or job offers!',
+  description:
+    'Hello there, here is my contact information. Feel free to contact me if you have any questions or job offers!',
   items: [
     {
       type: ContactType.Email,
@@ -302,5 +309,4 @@ export const socialLinks: Social[] = [
   //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   //{label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/raiden0456/'},
-
 ];

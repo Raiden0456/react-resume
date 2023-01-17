@@ -1,5 +1,5 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
 import emailjs from 'emailjs-com';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -32,22 +32,24 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      const service_id = "service_1e3z8ew";
-      const template_id = "template_dmz34di";
-      const public_key = "HthuyXHwBMcUYq8Cf";
+      const service_id = 'service_1e3z8ew';
+      const template_id = 'template_dmz34di';
+      const public_key = 'HthuyXHwBMcUYq8Cf';
       const template_params = {
-        "from_name": data.name,
-        "from_email": data.email,
-        "message": data.message
-      }
-      emailjs.send(service_id, template_id, template_params, public_key)
-      .then((result) => {
+        from_name: data.name,
+        from_email: data.email,
+        message: data.message,
+      };
+      emailjs.send(service_id, template_id, template_params, public_key).then(
+        result => {
           console.log(result.text);
           alert("Message sent successfully! I'll get back to you as soon as possible. :)");
-      }, (error) => {
+        },
+        error => {
           console.log(error.text);
-          alert("Message failed to send. Please try again later. :(");
-      });
+          alert('Message failed to send. Please try again later. :(');
+        },
+      );
     },
     [data],
   );
