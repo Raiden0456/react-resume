@@ -863,6 +863,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^0.1.9":
+  version: 0.1.9
+  resolution: "@vercel/analytics@npm:0.1.9"
+  peerDependencies:
+    react: ^16.8||^17||^18
+  checksum: ebeea65f2e05ef69d99f7f6b4d09304cecd9ea732088a372479a4b6bc4bb2484f93a4dd69543550e24494fd58fd12c50a4b3e4ef2cc8f1b89686af2d0f3733d6
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -5512,6 +5521,7 @@ __metadata:
     "@types/webpack-env": ^1.16.3
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
+    "@vercel/analytics": ^0.1.9
     autoprefixer: ^10.4.2
     classnames: ^2.3.1
     cssnano: ^5.1.1
