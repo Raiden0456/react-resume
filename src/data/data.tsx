@@ -37,7 +37,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Raiden0456 Resume',
-  description: "Resume of Vrezh Babakekhian, a Full Stack Software Engineer from Armenia/Russia.",
+  description: 'Resume of Vrezh Babakekhian, a Full Stack Software Engineer from Armenia/Russia.',
 };
 
 /**
@@ -54,7 +54,7 @@ export const SectionId = {
   Testimonials: 'testimonials',
 } as const;
 
-export type SectionId = typeof SectionId[keyof typeof SectionId];
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
@@ -269,7 +269,8 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Nani Babakekhian',
       text: 'Great communication, quick feedback and support for each project was a good surprise.',
-      image: 'http://static1.squarespace.com/static/5e77a8d31f1ca16b984e7d8c/t/5f2315f95dcf3778e4e4eaa6/1598456607711/%3F%3F%3F%3F%3F%3F_%3F%3F%3F%3F%3F%3F%3F%3F+%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C+1.jpg?format=1500w',
+      image:
+        'http://static1.squarespace.com/static/5e77a8d31f1ca16b984e7d8c/t/5f2315f95dcf3778e4e4eaa6/1598456607711/%3F%3F%3F%3F%3F%3F_%3F%3F%3F%3F%3F%3F%3F%3F+%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C+1.jpg?format=1500w',
     },
     {
       name: 'Sterio',
