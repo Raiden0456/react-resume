@@ -10,7 +10,7 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
-// import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.jpg';
@@ -299,14 +299,19 @@ export const contact: ContactSection = {
       href: 'https://goo.gl/maps/c8YixQs86qwHe7tu7',
     },
     {
-      type: ContactType.Instagram,
-      text: '@raiden0456',
-      href: 'https://www.instagram.com/raiden0456/',
-    },
-    {
       type: ContactType.Github,
       text: 'Raiden0456',
       href: 'https://github.com/Raiden0456',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Raiden0456',
+      href: 'https://www.linkedin.com/in/raiden-babakekhian/',
+    },
+    {
+      type: ContactType.Instagram,
+      text: '@raiden0456',
+      href: 'https://www.instagram.com/raiden0456/',
     },
   ],
 };
@@ -317,6 +322,6 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Raiden0456'},
   //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  //{label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/raiden-babakekhian/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/raiden0456/'},
 ];
