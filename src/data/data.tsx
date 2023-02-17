@@ -80,7 +80,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/Resume_V2.pdf',
+      href: '/assets/Resume_V3.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -291,7 +291,7 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'raidenwork@gmail.com',
+      text: 'workraiden@gmail.com',
       href: 'mailto:workraiden@gmail.com',
     },
     {
