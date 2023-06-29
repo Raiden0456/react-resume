@@ -68,9 +68,9 @@ export const heroData: Hero = {
         I'm a Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         currently working at{' '}
         <strong className="text-stone-100">
-          <a href="https://www.face2une.com/">Face2Une</a>
+          <a href="https://crossnetics.io/">CROSSNETICS</a>
         </strong>{' '}
-        as a lead CRM developer.
+        as a Full Stack developer.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city
@@ -248,10 +248,10 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'November 2022 - Present',
-    location: 'Face2Une™',
+    date: 'November 2022 - June 2023',
+    location: 'FaceStellar™',
     title: 'Lead Customer Relationship System developer',
-    content: <p>Currently developing a complex CRM system (Node.js + React) for a beauty saloon.</p>,
+    content: <p>Developed a complex CRM system (Node.js + React) for a beauty saloon.</p>,
   },
 ];
 
