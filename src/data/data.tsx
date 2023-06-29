@@ -112,7 +112,7 @@ export const aboutData: About = {
       text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)',
       Icon: AcademicCapIcon,
     },
-    {label: 'Employment', text: 'Face2Une™ remote', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'CROSSNETICS LLP remote', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -188,9 +188,9 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage1,
   },
   {
-    title: 'Face2Une',
-    description: 'Developing Face2Une CRM.',
-    url: 'https://www.face2une.com/',
+    title: 'FaceStellar',
+    description: 'Developing FaceStellar CRM.',
+    url: 'https://facestellar.com/',
     image: porfolioImage2,
   },
   {
