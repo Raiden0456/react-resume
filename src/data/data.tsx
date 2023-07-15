@@ -104,7 +104,7 @@ export const aboutData: About = {
   Friendly, easily work myself into the mix.`,
   aboutItems: [
     {label: 'Location', text: 'Barcelona, BCN', Icon: MapIcon},
-    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Armenian / Russian', Icon: FlagIcon},
     {label: 'Interests', text: 'Motocross, snowboard, EV boards, videogames, bass guitar', Icon: SparklesIcon},
     {
@@ -137,7 +137,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Spanish',
-        level: 4,
+        level: 5,
       },
     ],
   },
@@ -153,8 +153,8 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'SAAS',
-        level: 6,
+        name: 'Tailwind CSS',
+        level: 8,
       },
     ],
   },
@@ -213,10 +213,10 @@ export const education: TimelineItem[] = [
   },
   {
     date: 'September 2019 - July 2023',
-    location: 'Moscow - remote',
+    location: 'Moscow/Remote',
     title: 'Higher School of Economics',
     content: (
-      <p>Currently studying on double degree Data Scientist program, together with London School of Economics(LSE).</p>
+      <p>Double degree Data Scientist program, together with London School of Economics(LSE).</p>
     ),
   },
 ];
