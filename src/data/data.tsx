@@ -37,7 +37,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Raiden0456 Resume',
+  title: 'Raiden0456',
   description: 'Resume of Vrezh Babakekhian, a Full Stack Software Engineer from Armenia/Russia.',
 };
 
