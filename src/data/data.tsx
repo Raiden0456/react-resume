@@ -17,8 +17,9 @@ import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/browfique.png';
 import porfolioImage2 from '../images/portfolio/face2une_2.jpg';
 import porfolioImage3 from '../images/portfolio/hl-back.png';
+import porfolioImage4 from '../images/portfolio/yaghtprogroup.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.png';
+import testimonialImage from '../images/testimonial.jpg';
 import {
   About,
   ContactSection,
@@ -65,7 +66,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
+        Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         currently working at{' '}
         <strong className="text-stone-100">
           <a href="https://crossnetics.io/">CROSSNETICS</a>
@@ -112,7 +113,7 @@ export const aboutData: About = {
       text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)',
       Icon: AcademicCapIcon,
     },
-    {label: 'Employment', text: 'CROSSNETICS LLP remote', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'CROSSNETICS LLP', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -145,17 +146,22 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'Next.js',
-        level: 6,
+        name: 'Astrojs',
+        level: 8,
+      },
+      {
+        name: 'Tailwind CSS',
+        level: 8,
       },
       {
         name: 'Typescript',
         level: 7,
       },
       {
-        name: 'Tailwind CSS',
-        level: 8,
+        name: 'Next.js',
+        level: 6,
       },
+      
     ],
   },
   {
@@ -169,9 +175,39 @@ export const skills: SkillGroup[] = [
         name: 'Node.js',
         level: 7,
       },
+    ],
+  },
+  {
+    name: 'Database management',
+    skills: [
       {
-        name: 'mySQL & PostgreSQL',
+        name: 'MySQL & PostgreSQL',
+        level: 8,
+      },
+      {
+        name: 'MongoDB',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Other',
+    skills: [
+      {
+        name: 'Linux',
+        level: 10,
+      },
+      {
+        name: 'Git',
         level: 7,
+      },
+      {
+        name: 'Docker',
+        level: 5,
+      },
+      {
+        name: 'AWS',
+        level: 3,
       },
     ],
   },
@@ -189,7 +225,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'FaceStellar',
-    description: 'Developing FaceStellar CRM.',
+    description: 'Developed FaceStellar CRM.',
     url: 'https://facestellar.com/',
     image: porfolioImage2,
   },
@@ -198,6 +234,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Devepoled CRM system for an international logistics company.',
     url: 'https://hl-group.ru/',
     image: porfolioImage3,
+  },
+  {
+    title: 'Yaght Pro Group',
+    description: 'Landing website for yaght rental/sales/management agency.',
+    url: 'https://www.yachtprogroup.com/',
+    image: porfolioImage4,
   },
 ];
 

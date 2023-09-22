@@ -24,7 +24,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "sharp": "^0.31.3",
-    "ts-pattern": "^4.0.3"
+    "ts-pattern": "^4.0.3",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.0",
