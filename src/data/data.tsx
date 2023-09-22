@@ -295,6 +295,23 @@ export const experience: TimelineItem[] = [
     title: 'Lead Customer Relationship System developer',
     content: <p>Developed a complex CRM system (Node.js + React) for a beauty saloon.</p>,
   },
+  {
+    date: 'March 2023 - Present',
+    location: 'CROSSNETICS LLP',
+    title: 'Full-stack Developer', 
+    content: (
+      <ul>
+        <li>Developed a complex marketplace leveraging web3 technologies to bridge influencers with interested companies.</li>
+        <li>Utilized a tech stack comprising Next.js, GraphQL, TailwindCSS, MongoDB, and TypeScript.</li>
+        <li>Designed and implemented robust database structures to support the marketplace's functionalities.</li>
+        <li>Developed a landing page using Astro.js, ensuring optimal performance and user experience.</li>
+        <li>Collaborated closely with other team members to ensure seamless integration of front-end and back-end features.</li>
+        <li>Managed and maintained the MongoDB database, ensuring data integrity and security.</li>
+        <li>Continuously iterated on the platform based on user feedback and analytics to enhance usability and features.</li>
+      </ul>
+    ),
+}
+
 ];
 
 /**
