@@ -1,16 +1,28 @@
+// External module imports
 import {ChevronDownIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo} from 'react';
+import {FC, memo, useMemo} from 'react';
 import Typewriter from 'typewriter-effect';
 
-
+// Newline separator
+// Internal module imports
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
+
 const Hero: FC = memo(() => {
   const {imageSrc, name, description, actions} = heroData;
+
+  const typewriterOptions = useMemo(
+    () => ({
+      strings: ['Hi!', name, 'Full-stack Developer.'],
+      autoStart: true,
+      loop: true,
+    }),
+    [name],
+  );
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
@@ -27,13 +39,7 @@ const Hero: FC = memo(() => {
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
             <div className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">
-                <Typewriter
-                  options={{
-                      strings: ['Hi!', name, "Full-stack Developer."],
-                      autoStart: true,
-                      loop: true,
-                  }}
-                />
+              <Typewriter options={typewriterOptions} />
             </div>
             {description}
             <div className="flex gap-x-4 text-neutral-100">
