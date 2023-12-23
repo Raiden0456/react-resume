@@ -159,7 +159,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Next.js',
-        level: 6,
+        level: 7,
       },
       
     ],
@@ -175,6 +175,10 @@ export const skills: SkillGroup[] = [
         name: 'Node.js',
         level: 7,
       },
+      {
+        name: 'REST API',
+        level: 7
+      }
     ],
   },
   {
@@ -186,7 +190,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'MongoDB',
-        level: 5,
+        level: 6,
       },
     ],
   },
