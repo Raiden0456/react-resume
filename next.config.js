@@ -13,6 +13,19 @@ const nextConfig = {
       rule.include = undefined;
     });
 
+    config.module.rules.push({
+      test: /\.mp4$/,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            publicPath: "/_next",
+            name: "static/media/[name].[hash].[ext]",
+          },
+        },
+      ],
+    });
+
     return config;
   },
   compress: true,

@@ -1,7 +1,6 @@
 // External module imports
 import {ChevronDownIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
-import Image from 'next/image';
 import {FC, memo, useMemo} from 'react';
 import Typewriter from 'typewriter-effect';
 
@@ -13,7 +12,7 @@ import Socials from '../Socials';
 
 
 const Hero: FC = memo(() => {
-  const {imageSrc, name, description, actions} = heroData;
+  const {videoSrc, name, description, actions} = heroData;
 
   const typewriterOptions = useMemo(
     () => ({
@@ -27,17 +26,17 @@ const Hero: FC = memo(() => {
   return (
     <Section noPadding sectionId={SectionId.Hero}>
       <div className="relative flex h-screen w-screen items-center justify-center">
-        <Image
-          alt={`${name}-image`}
-          className="absolute z-0"
-          layout="fill"
-          objectFit="cover"
-          placeholder="blur"
-          priority
-          src={imageSrc}
-        />
+        <video
+          autoPlay
+          className="absolute z-0 object-cover w-full h-full"
+          loop
+          muted
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
+          <div
+            className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
             <div className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">
               <Typewriter options={typewriterOptions} />
             </div>
@@ -49,8 +48,8 @@ const Hero: FC = memo(() => {
               {actions.map(({href, text, primary, Icon}) => (
                 <a
                   className={classNames(
-                    'flex gap-x-2 rounded-full border-2 bg-none py-2 px-4 text-sm font-medium text-white ring-offset-teal-700/40 hover:bg-teal-700/40 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                    primary ? 'border-teal-500 ring-teal-500' : 'border-white ring-white',
+                    'flex gap-x-2 rounded-full border-2 bg-none py-2 px-4 text-sm font-medium text-white ring-offset-teal-700/40 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                    primary ? 'border-teal-500 ring-teal-500 hover:bg-teal-700/40' : 'border-white ring-white hover:bg-white/40',
                   )}
                   href={href}
                   key={text}>

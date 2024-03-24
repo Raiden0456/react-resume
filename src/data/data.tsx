@@ -11,15 +11,15 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/browfique.png';
 import porfolioImage2 from '../images/portfolio/face2une_2.jpg';
 import porfolioImage3 from '../images/portfolio/hl-back.png';
 import porfolioImage4 from '../images/portfolio/yaghtprogroup.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.jpg';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
+import heroVideo from '../videos/cozy-room.mp4';
 import {
   About,
   ContactSection,
@@ -61,14 +61,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
+  videoSrc: heroVideo,
   name: `I'm Vrezh Babakekhian.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         currently working at{' '}
-        <strong className="text-stone-100">
+        <strong className="text-stone-100 underline">
           <a href="https://crossnetics.io/">CROSSNETICS</a>
         </strong>{' '}
         as a Full Stack developer.
@@ -113,7 +113,7 @@ export const aboutData: About = {
       text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)',
       Icon: AcademicCapIcon,
     },
-    {label: 'Employment', text: 'CROSSNETICS LLP', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'CROSSNETICS', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -257,15 +257,23 @@ export const education: TimelineItem[] = [
   {
     date: 'September 2008 - June 2019',
     location: 'Vladivostok',
-    title: 'School 13 with deep learning English course',
-    content: <p>Learned fluent English</p>,
+    title: 'School No. 13 with in-depth study of English language',
+    content: <p>School No. 13 is notable for its specialist program in English language studies, which focuses on a comprehensive curriculum that not only improves students' linguistic ability but also broadens their knowledge of English literature and cultures. Beyond typical classroom instruction, the school creates a stimulating learning environment through literary groups, cultural initiatives, and participation in national and international language competitions, with the goal of developing fluent and culturally aware English speakers.</p>,
   },
   {
     date: 'September 2019 - July 2023',
-    location: 'Moscow/Remote',
+    location: 'London/Remote',
+    title: 'London School of Economics and Political Science',
+    content: (
+      <p>Double degree Data Scientist Bachelor program. Combines data science, machine learning, statistics and mathematics. The programme uses a rigorous approach, has a mathematical focus and involves applying data science to the social sciences.</p>
+    ),
+  },
+  {
+    date: 'September 2019 - July 2023',
+    location: 'Moscow/On-site',
     title: 'Higher School of Economics',
     content: (
-      <p>Double degree Data Scientist program, together with London School of Economics(LSE).</p>
+      <p>Double degree Data Scientist Bachelor program. The aim of this programme is to train analysts and data scientists who are experienced in modern methods of machine learning, software development, working with big data and developing analytical models for business. The programme is based on the successful experience of HSE University’s Bachelor’s programme in Applied Mathematics and Informatics and the longstanding work of the London School of Economics and Political Science (University of London).</p>
     ),
   },
 ];
@@ -304,7 +312,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'March 2023 - Present',
-    location: 'CROSSNETICS LLP',
+    location: 'CROSSNETICS',
     title: 'Full-stack Developer', 
     content: (
       <ul>

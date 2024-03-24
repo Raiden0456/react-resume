@@ -4,10 +4,17 @@ module.exports = {
   // darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        'slide-in': 'slideIn 1.5s forwards',
+      },
       keyframes: {
         typing: {
           '0%, 100%': {width: '0%'},
           '30%, 70%': {width: '100%'},
+        },
+        slideIn: {
+          '0%': {width: '0'},
+          '100%': {width: '100%'},
         },
         blink: {
           '0%': {
