@@ -66,7 +66,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Barcelona/Yerevan based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
+        Barcelona based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
         currently working at{' '}
         <strong className="text-stone-100 underline">
           <a href="https://crossnetics.io/">CROSSNETICS</a>
@@ -99,10 +99,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `A passionate Full Stack developer from Armenia/Russia. 
+  description: `Full Stack developer based in Barcelona. 
   Committed to utilizing my skills to further the mission of a company. 
   Have a great passion towards programming and possess an ability to work under stress.
-  Friendly, easily work myself into the mix.`,
+  Highly communicative.`,
   aboutItems: [
     {label: 'Location', text: 'Barcelona, BCN', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -110,7 +110,7 @@ export const aboutData: About = {
     {label: 'Interests', text: 'Motocross, snowboard, EV boards, videogames, bass guitar', Icon: SparklesIcon},
     {
       label: 'Study',
-      text: 'Higher School of Economics(HSE Moscow), London School of Economics(LSE London)',
+      text: 'London School of Economics(LSE London), Higher School of Economics(HSE Moscow)',
       Icon: AcademicCapIcon,
     },
     {label: 'Employment', text: 'CROSSNETICS', Icon: OfficeBuildingIcon},
@@ -255,12 +255,6 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'September 2008 - June 2019',
-    location: 'Vladivostok',
-    title: 'School No. 13 with in-depth study of English language',
-    content: <p>School No. 13 is notable for its specialist program in English language studies, which focuses on a comprehensive curriculum that not only improves students' linguistic ability but also broadens their knowledge of English literature and cultures. Beyond typical classroom instruction, the school creates a stimulating learning environment through literary groups, cultural initiatives, and participation in national and international language competitions, with the goal of developing fluent and culturally aware English speakers.</p>,
-  },
-  {
     date: 'September 2019 - July 2023',
     location: 'London/Remote',
     title: 'London School of Economics and Political Science',
@@ -276,14 +270,36 @@ export const education: TimelineItem[] = [
       <p>Double degree Data Scientist Bachelor program. The aim of this programme is to train analysts and data scientists who are experienced in modern methods of machine learning, software development, working with big data and developing analytical models for business. The programme is based on the successful experience of HSE University’s Bachelor’s programme in Applied Mathematics and Informatics and the longstanding work of the London School of Economics and Political Science (University of London).</p>
     ),
   },
+  {
+    date: 'September 2008 - June 2019',
+    location: 'Vladivostok',
+    title: 'School No. 13 with in-depth study of English language',
+    content: <p>School No. 13 is notable for its specialist program in English language studies, which focuses on a comprehensive curriculum that not only improves students' linguistic ability but also broadens their knowledge of English literature and cultures. Beyond typical classroom instruction, the school creates a stimulating learning environment through literary groups, cultural initiatives, and participation in national and international language competitions, with the goal of developing fluent and culturally aware English speakers.</p>,
+  },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'May 2020 - September 2020',
-    location: 'ООО "Kinoprokat", "Moscow" cinema',
-    title: 'System administrator assistant',
-    content: <p>Assisted System administrator with maintaining Cinema's Database.</p>,
+    date: 'March 2023 - Present',
+    location: 'CROSSNETICS',
+    title: 'Full-stack Developer', 
+    content: (
+      <ul>
+        <li>Developed a complex marketplace leveraging web3 technologies to bridge influencers with interested companies.</li>
+        <li>Utilized a tech stack comprising Next.js, GraphQL, TailwindCSS, MongoDB/Mysql, and TypeScript.</li>
+        <li>Designed and implemented robust database structures to support the marketplace's functionalities.</li>
+        <li>Developed a landing page using Astro.js, ensuring optimal performance and user experience.</li>
+        <li>Collaborated closely with other team members to ensure seamless integration of front-end and back-end features.</li>
+        <li>Managed and maintained the MongoDB and MySql database, ensuring data integrity and security.</li>
+        <li>Continuously iterated on the platform based on user feedback and analytics to enhance usability and features.</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'November 2022 - June 2023',
+    location: 'FaceStellar™',
+    title: 'Lead Customer Relationship System developer',
+    content: <p>Developed a complex CRM system (Node.js + React) for a beauty saloon.</p>,
   },
   {
     date: 'January 2022 - August 2022',
@@ -305,27 +321,11 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'November 2022 - June 2023',
-    location: 'FaceStellar™',
-    title: 'Lead Customer Relationship System developer',
-    content: <p>Developed a complex CRM system (Node.js + React) for a beauty saloon.</p>,
-  },
-  {
-    date: 'March 2023 - Present',
-    location: 'CROSSNETICS',
-    title: 'Full-stack Developer', 
-    content: (
-      <ul>
-        <li>Developed a complex marketplace leveraging web3 technologies to bridge influencers with interested companies.</li>
-        <li>Utilized a tech stack comprising Next.js, GraphQL, TailwindCSS, MongoDB/Mysql, and TypeScript.</li>
-        <li>Designed and implemented robust database structures to support the marketplace's functionalities.</li>
-        <li>Developed a landing page using Astro.js, ensuring optimal performance and user experience.</li>
-        <li>Collaborated closely with other team members to ensure seamless integration of front-end and back-end features.</li>
-        <li>Managed and maintained the MongoDB and MySql database, ensuring data integrity and security.</li>
-        <li>Continuously iterated on the platform based on user feedback and analytics to enhance usability and features.</li>
-      </ul>
-    ),
-}
+    date: 'May 2020 - September 2020',
+    location: 'ООО "Kinoprokat", "Moscow" cinema',
+    title: 'System administrator assistant',
+    content: <p>Assisted System administrator with maintaining Cinema's Database.</p>,
+  }
 
 ];
 
