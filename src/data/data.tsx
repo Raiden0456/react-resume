@@ -195,6 +195,14 @@ export const skills: SkillGroup[] = [
         name: 'MongoDB',
         level: 6,
       },
+      {
+        name: 'ElasticSearch',
+        level: 5,
+      },
+      {
+        name: 'Redis',
+        level: 4,
+      }
     ],
   },
   {
@@ -284,14 +292,13 @@ export const experience: TimelineItem[] = [
     location: 'CROSSNETICS',
     title: 'Full-stack Developer', 
     content: (
-      <ul>
-        <li>Developed a complex marketplace leveraging web3 technologies to bridge influencers with interested companies.</li>
-        <li>Utilized a tech stack comprising Next.js, GraphQL, TailwindCSS, MongoDB/Mysql, and TypeScript.</li>
-        <li>Designed and implemented robust database structures to support the marketplace's functionalities.</li>
-        <li>Developed a landing page using Astro.js, ensuring optimal performance and user experience.</li>
-        <li>Collaborated closely with other team members to ensure seamless integration of front-end and back-end features.</li>
-        <li>Managed and maintained the MongoDB and MySql database, ensuring data integrity and security.</li>
-        <li>Continuously iterated on the platform based on user feedback and analytics to enhance usability and features.</li>
+      <ul className="list-disc">
+        <li>Developed a comprehensive marketing web platform utilizing advanced AI algorithms and web3 technologies.</li>
+        <li>Implemented automated project documentation and typization via tools like swagger for both backend and frontend that significantly boosted development process.</li>
+        <li>Developed a RESTful API that handled over 1 million requests per day with response times under 200 millisecond.</li>
+        <li>Utilized a diverse tech stack including NestJS, Next.js, TypeScript, MySQL, Redis and ElasticSearch.</li>
+        <li>Implemented a microservices architecture that improved system modularity and reduced dependencies between components.</li>
+        <li>Optimized database queries to improve application performance and reduce response times by 10-25%.</li>
       </ul>
     ),
   },
@@ -299,24 +306,27 @@ export const experience: TimelineItem[] = [
     date: 'November 2022 - June 2023',
     location: 'FaceStellar™',
     title: 'Lead Customer Relationship System developer',
-    content: <p>Developed a complex CRM system (Node.js + React) for a beauty saloon.</p>,
+    content: (
+      <ul className="list-disc">
+        <li>Developed complex CRM system from the ground up leveraging Node.js + Express and React that improved customer service efficiency by 30%.</li>
+        <li>Created a Continuous Integration/Continuous Deployment (CI/CD) pipeline that allowed easy deployment process
+        </li>
+      </ul>
+    ),
   },
   {
     date: 'January 2022 - August 2022',
     location: 'Highway logistic group',
     title: 'PhP back end developer',
     content: (
-      <ul>
-        <li>Maintained MySQL Database.</li>
-        <li>Modified/Created new, sections in relational database.</li>
-        <li>Implemented new features, complex classes and controllers for the company's own CRM system.</li>
-        <li>Was responsible for code debugging.</li>
-        <li>Managed migration from PhP version 5 to 7.4</li>
-        <li>
-          Closely cooperated with front end developers wherever there was a need to create from ground up a new section
-          in the system.
-        </li>
-        <li>Worked on urgent front/back end features.</li>
+      <ul className="list-disc">
+        <li>Oversaw the maintenance and optimization of MySQL databases, ensuring data integrity and performance enhancements, contributing to a more robust and reliable data management system.</li>
+        <li>Developed and integrated new sections within the company's relational database architecture, leading to enhanced data organization and accessibility.</li>
+        <li>Played a key role in the expansion and enhancement of the company's CRM system by implementing advanced features, complex classes, and controllers, resulting in a more dynamic and user-friendly platform.</li>
+        <li>Led the debugging efforts for critical software components, identifying and resolving numerous issues, which increased system reliability by 15% and reduced downtime.</li>
+        <li>Managed a migration of the company’s software stack from PHP version 5 to 7.4, ensuring compatibility and leveraging new features for a 40% improvement in system performance.</li>
+        <li>Worked closely with front-end developers to architect and build new system sections from scratch, enhancing the user experience and interface functionality.</li>
+        <li>Responded to high-priority development needs, efficiently delivering urgent front-end and back-end features that improved overall system responsiveness and user satisfaction by 50%.</li>
       </ul>
     ),
   },
