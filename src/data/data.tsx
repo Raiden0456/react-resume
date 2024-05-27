@@ -74,7 +74,7 @@ export const heroData: Hero = {
         as a Full Stack developer.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city
+        In my free time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city
         on my <strong className="text-stone-100">OneWheel</strong>, or sitting at home chilling and playing videogames.
       </p>
     </>
