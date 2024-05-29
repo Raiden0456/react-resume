@@ -12,12 +12,11 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import TelegramIcon from '../components/Icon/TelegramIcon';
-
 import porfolioImage1 from '../images/portfolio/browfique.png';
+import porfolioImage5 from '../images/portfolio/crossnetics-landing.png';
 import porfolioImage2 from '../images/portfolio/facestellar.png';
 import porfolioImage3 from '../images/portfolio/hl-landing.png';
 import porfolioImage4 from '../images/portfolio/yaghtprogroup-mobile.png';
-import porfolioImage5 from '../images/portfolio/crossnetics-landing.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.jpg';
 import heroVideo from '../videos/cozy-room.mp4';
@@ -67,16 +66,15 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Barcelona based <strong className="text-stone-100">Full Stack Software Engineer</strong>,
-        currently working at{' '}
+        Barcelona based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working at{' '}
         <strong className="text-stone-100 underline">
           <a href="https://crossnetics.io/">CROSSNETICS</a>
         </strong>{' '}
         as a Full Stack developer.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city
-        on my <strong className="text-stone-100">OneWheel</strong>, or sitting at home chilling and playing videogames.
+        In my free time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city on my{' '}
+        <strong className="text-stone-100">OneWheel</strong>, or sitting at home chilling and playing videogames.
       </p>
     </>
   ),
@@ -176,12 +174,12 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'PHP',
-        level: 6
+        level: 6,
       },
       {
         name: 'Express.js',
-        level: 6
-      }
+        level: 6,
+      },
     ],
   },
   {
@@ -202,7 +200,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Redis',
         level: 4,
-      }
+      },
     ],
   },
   {
@@ -273,7 +271,11 @@ export const education: TimelineItem[] = [
     location: 'London/Remote',
     title: 'London School of Economics and Political Science',
     content: (
-      <p>Double degree Data Scientist Bachelor program. Combines data science, machine learning, statistics and mathematics. The programme uses a rigorous approach, has a mathematical focus and involves applying data science to the social sciences.</p>
+      <p>
+        Double degree Data Scientist Bachelor program. Combines data science, machine learning, statistics and
+        mathematics. The programme uses a rigorous approach, has a mathematical focus and involves applying data science
+        to the social sciences.
+      </p>
     ),
   },
   {
@@ -281,14 +283,28 @@ export const education: TimelineItem[] = [
     location: 'Moscow/On-site',
     title: 'Higher School of Economics',
     content: (
-      <p>Double degree Data Scientist Bachelor program. The aim of this programme is to train analysts and data scientists who are experienced in modern methods of machine learning, software development, working with big data and developing analytical models for business. The programme is based on the successful experience of HSE University’s Bachelor’s programme in Applied Mathematics and Informatics and the longstanding work of the London School of Economics and Political Science (University of London).</p>
+      <p>
+        Double degree Data Scientist Bachelor program. The aim of this programme is to train analysts and data
+        scientists who are experienced in modern methods of machine learning, software development, working with big
+        data and developing analytical models for business. The programme is based on the successful experience of HSE
+        University’s Bachelor’s programme in Applied Mathematics and Informatics and the longstanding work of the London
+        School of Economics and Political Science (University of London).
+      </p>
     ),
   },
   {
     date: 'September 2008 - June 2019',
     location: 'Vladivostok',
     title: 'School No. 13 with in-depth study of English language',
-    content: <p>School No. 13 is notable for its specialist program in English language studies, which focuses on a comprehensive curriculum that not only improves students' linguistic ability but also broadens their knowledge of English literature and cultures. Beyond typical classroom instruction, the school creates a stimulating learning environment through literary groups, cultural initiatives, and participation in national and international language competitions, with the goal of developing fluent and culturally aware English speakers.</p>,
+    content: (
+      <p>
+        School No. 13 is notable for its specialist program in English language studies, which focuses on a
+        comprehensive curriculum that not only improves students' linguistic ability but also broadens their knowledge
+        of English literature and cultures. Beyond typical classroom instruction, the school creates a stimulating
+        learning environment through literary groups, cultural initiatives, and participation in national and
+        international language competitions, with the goal of developing fluent and culturally aware English speakers.
+      </p>
+    ),
   },
 ];
 
@@ -296,14 +312,25 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2023 - Present',
     location: 'CROSSNETICS',
-    title: 'Full-stack Developer', 
+    title: 'Full-stack Developer',
     content: (
       <ul className="list-disc">
-        <li>Developed a comprehensive marketing web platform utilizing advanced AI algorithms and web3 technologies.</li>
-        <li>Implemented automated project documentation and typization via tools like swagger for both backend and frontend that significantly boosted development process.</li>
-        <li>Developed a RESTful API that handled over 1 million requests per day with response times under 200 millisecond.</li>
+        <li>
+          Developed a comprehensive marketing web platform utilizing advanced AI algorithms and web3 technologies.
+        </li>
+        <li>
+          Implemented automated project documentation and typization via tools like swagger for both backend and
+          frontend that significantly boosted development process.
+        </li>
+        <li>
+          Developed a RESTful API that handled over 1 million requests per day with response times under 200
+          millisecond.
+        </li>
         <li>Utilized a diverse tech stack including NestJS, Next.js, TypeScript, MySQL, Redis and ElasticSearch.</li>
-        <li>Implemented a microservices architecture that improved system modularity and reduced dependencies between components.</li>
+        <li>
+          Implemented a microservices architecture that improved system modularity and reduced dependencies between
+          components.
+        </li>
         <li>Optimized database queries to improve application performance and reduce response times by 10-25%.</li>
       </ul>
     ),
@@ -314,8 +341,12 @@ export const experience: TimelineItem[] = [
     title: 'Lead Customer Relationship System developer',
     content: (
       <ul className="list-disc">
-        <li>Developed complex CRM system from the ground up leveraging Node.js + Express and React that improved customer service efficiency by 30%.</li>
-        <li>Created a Continuous Integration/Continuous Deployment (CI/CD) pipeline that allowed easy deployment process
+        <li>
+          Developed complex CRM system from the ground up leveraging Node.js + Express and React that improved customer
+          service efficiency by 30%.
+        </li>
+        <li>
+          Created a Continuous Integration/Continuous Deployment (CI/CD) pipeline that allowed easy deployment process
         </li>
       </ul>
     ),
@@ -326,13 +357,34 @@ export const experience: TimelineItem[] = [
     title: 'PhP back end developer',
     content: (
       <ul className="list-disc">
-        <li>Oversaw the maintenance and optimization of MySQL databases, ensuring data integrity and performance enhancements, contributing to a more robust and reliable data management system.</li>
-        <li>Developed and integrated new sections within the company's relational database architecture, leading to enhanced data organization and accessibility.</li>
-        <li>Played a key role in the expansion and enhancement of the company's CRM system by implementing advanced features, complex classes, and controllers, resulting in a more dynamic and user-friendly platform.</li>
-        <li>Led the debugging efforts for critical software components, identifying and resolving numerous issues, which increased system reliability by 15% and reduced downtime.</li>
-        <li>Managed a migration of the company’s software stack from PHP version 5 to 7.4, ensuring compatibility and leveraging new features for a 40% improvement in system performance.</li>
-        <li>Worked closely with front-end developers to architect and build new system sections from scratch, enhancing the user experience and interface functionality.</li>
-        <li>Responded to high-priority development needs, efficiently delivering urgent front-end and back-end features that improved overall system responsiveness and user satisfaction by 50%.</li>
+        <li>
+          Oversaw the maintenance and optimization of MySQL databases, ensuring data integrity and performance
+          enhancements, contributing to a more robust and reliable data management system.
+        </li>
+        <li>
+          Developed and integrated new sections within the company's relational database architecture, leading to
+          enhanced data organization and accessibility.
+        </li>
+        <li>
+          Played a key role in the expansion and enhancement of the company's CRM system by implementing advanced
+          features, complex classes, and controllers, resulting in a more dynamic and user-friendly platform.
+        </li>
+        <li>
+          Led the debugging efforts for critical software components, identifying and resolving numerous issues, which
+          increased system reliability by 15% and reduced downtime.
+        </li>
+        <li>
+          Managed a migration of the company’s software stack from PHP version 5 to 7.4, ensuring compatibility and
+          leveraging new features for a 40% improvement in system performance.
+        </li>
+        <li>
+          Worked closely with front-end developers to architect and build new system sections from scratch, enhancing
+          the user experience and interface functionality.
+        </li>
+        <li>
+          Responded to high-priority development needs, efficiently delivering urgent front-end and back-end features
+          that improved overall system responsiveness and user satisfaction by 50%.
+        </li>
       </ul>
     ),
   },
@@ -341,8 +393,7 @@ export const experience: TimelineItem[] = [
     location: 'ООО "Kinoprokat", "Moscow" cinema',
     title: 'System administrator assistant',
     content: <p>Assisted System administrator with maintaining Cinema's Database.</p>,
-  }
-
+  },
 ];
 
 /**

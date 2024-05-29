@@ -16,7 +16,7 @@ const ResumeSection: FC<PropsWithChildren<{title: string}>> = memo(({title, chil
         root: null,
         rootMargin: '0px',
         threshold: 0.1,
-      }
+      },
     );
 
     if (currentSpan) {

@@ -36,7 +36,7 @@ export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
         root: null,
         rootMargin: '0px',
         threshold: 0.1,
-      }
+      },
     );
 
     if (currentBar) {
@@ -70,7 +70,11 @@ export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
     <div className="flex flex-col">
       <span className="ml-2 text-sm font-medium">{name}</span>
       <div className="h-5 w-full overflow-hidden rounded-full bg-neutral-300">
-        <div className="h-full rounded-full bg-gradient-to-r from-emerald-300 to-teal-400" ref={barRef} style={{width: `${percentage}%`}} />
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-emerald-300 to-teal-400"
+          ref={barRef}
+          style={{width: `${percentage}%`}}
+        />
       </div>
     </div>
   );
