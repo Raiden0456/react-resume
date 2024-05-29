@@ -11,14 +11,15 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+//import TelegramIcon from '../components/Icon/TelegramIcon';
+
 import porfolioImage1 from '../images/portfolio/browfique.png';
-import porfolioImage2 from '../images/portfolio/face2une_2.jpg';
-import porfolioImage3 from '../images/portfolio/hl-back.png';
-import porfolioImage4 from '../images/portfolio/yaghtprogroup.jpg';
+import porfolioImage2 from '../images/portfolio/facestellar.png';
+import porfolioImage3 from '../images/portfolio/hl-landing.png';
+import porfolioImage4 from '../images/portfolio/yaghtprogroup-mobile.png';
+import porfolioImage5 from '../images/portfolio/crossnetics-landing.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.jpg';
-// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroVideo from '../videos/cozy-room.mp4';
 import {
   About,
@@ -81,7 +82,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/Resume_V5.pdf',
+      href: '/assets/Resume_V6.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -99,10 +100,9 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Full Stack developer based in Barcelona. 
-  Committed to utilizing my skills to further the mission of a company. 
-  Have a great passion towards programming and possess an ability to work under stress.
-  Highly communicative.`,
+  description: `Passionate Web Developer with expertise across all development stages. 
+  Skilled in UI, testing, debugging, and technologies like Docker, Git, TypeScript, NestJS, and React. 
+  Effective in both solo and team projects, committed to delivering standout web solutions.`,
   aboutItems: [
     {label: 'Location', text: 'Barcelona, BCN', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
@@ -146,21 +146,21 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'Astrojs',
-        level: 8,
-      },
-      {
-        name: 'Tailwind CSS',
-        level: 8,
-      },
-      {
         name: 'Next.js',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Typescript',
+        level: 8,
+      },
+      {
+        name: 'Astrojs',
         level: 7,
-      },      
+      },
+      {
+        name: 'Tailwind CSS',
+        level: 9,
+      },
     ],
   },
   {
@@ -255,6 +255,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Landing website for yaght rental/sales/management agency.',
     url: 'https://www.yachtprogroup.com/',
     image: porfolioImage4,
+  },
+  {
+    title: 'Crossnetics',
+    description: 'Fullstack developer at CROSSNETICS.',
+    url: 'https://crossnetics.io/',
+    image: porfolioImage5,
   },
 ];
 
@@ -388,6 +394,11 @@ export const contact: ContactSection = {
       text: 'Raiden0456',
       href: 'https://github.com/Raiden0456',
     },
+    // {
+    //   type: ContactType.Telegram,
+    //   text: '@Raiden0456',
+    //   href: 'https://t.me/Raiden0456',
+    // },
     {
       type: ContactType.LinkedIn,
       text: 'Raiden0456',
@@ -406,7 +417,7 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Raiden0456'},
-  //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  //{label: 'Telegram', Icon: TelegramIcon, href: 'https://t.me/Raiden0456'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/raiden-babakekhian/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/raiden0456/'},
 ];

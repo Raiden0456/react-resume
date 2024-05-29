@@ -121,9 +121,8 @@ export const ContactType = {
   Phone: 'Phone',
   Location: 'Location',
   Github: 'Github',
+  //Telegram: 'Telegram',
   LinkedIn: 'LinkedIn',
-  Facebook: 'Facebook',
-  Twitter: 'Twitter',
   Instagram: 'Instagram',
 } as const;
 
