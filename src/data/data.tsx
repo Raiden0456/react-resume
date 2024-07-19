@@ -103,7 +103,7 @@ export const aboutData: About = {
   Effective in both solo and team projects, committed to delivering standout web solutions.`,
   aboutItems: [
     {label: 'Location', text: 'Barcelona, BCN', Icon: MapIcon},
-    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Armenian / Russian', Icon: FlagIcon},
     {label: 'Interests', text: 'Motocross, snowboard, EV boards, videogames, bass guitar', Icon: SparklesIcon},
     {
