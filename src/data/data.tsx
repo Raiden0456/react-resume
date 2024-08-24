@@ -13,6 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import TelegramIcon from '../components/Icon/TelegramIcon';
 import porfolioImage1 from '../images/portfolio/browfique.png';
+import portfolioImage6 from '../images/portfolio/classy-english-anna.png';
 import porfolioImage5 from '../images/portfolio/crossnetics-landing.png';
 import porfolioImage2 from '../images/portfolio/facestellar.png';
 import porfolioImage3 from '../images/portfolio/hl-landing.png';
@@ -235,6 +236,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Website for a beauty saloon.',
     url: 'https://www.browfique.com/',
     image: porfolioImage1,
+  },
+  {
+    title: 'Classy English Anna',
+    description: 'Information/contact website for an English tutor.',
+    url: 'https://anna-home.vercel.app/',
+    image: portfolioImage6,
   },
   {
     title: 'FaceStellar',
