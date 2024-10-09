@@ -67,11 +67,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Barcelona based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working at{' '}
-        <strong className="text-stone-100 underline">
-          <a href="https://crossnetics.io/">CROSSNETICS</a>
-        </strong>{' '}
-        as a Full Stack developer.
+        Barcelona based <strong className="text-stone-100">Full Stack Software Engineer</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, you can find me in <strong className="text-stone-100">Barcelona</strong>, exploring city on my{' '}
