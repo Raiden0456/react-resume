@@ -404,7 +404,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'March 2023 - August 2024',
     location: 'CROSSNETICS',
-    title: 'Full-stack Developer',
+    title: 'Fullstack Developer',
     content: (
       <ul className="list-disc">
         <li>
