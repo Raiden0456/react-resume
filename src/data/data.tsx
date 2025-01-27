@@ -17,7 +17,9 @@ import portfolioImage6 from '../images/portfolio/classy-english-anna.png';
 import porfolioImage5 from '../images/portfolio/crossnetics-landing.png';
 import porfolioImage2 from '../images/portfolio/facestellar.png';
 import porfolioImage3 from '../images/portfolio/hl-landing.png';
-import porfolioImage4 from '../images/portfolio/yaghtprogroup-mobile.png';
+import portfolioImage8 from '../images/portfolio/kodix.png';
+import portfolioImage7 from '../images/portfolio/nexusverse.png';
+import porfolioImage4 from '../images/portfolio/yaghtprogroup-landing.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.jpg';
 import heroVideo from '../videos/cozy-room.mp4';
@@ -95,8 +97,8 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Passionate Web Developer with expertise across all development stages. 
-  Skilled in UI, testing, debugging, and technologies like Docker, Git, TypeScript, NestJS, and React. 
+  description: `Passionate Web Developer with expertise across all development stages.
+  Skilled in UI, testing, debugging, and technologies like Docker, Git, TypeScript, NestJS, and React.
   Effective in both solo and team projects, committed to delivering standout web solutions.`,
   aboutItems: [
     {label: 'Location', text: 'Barcelona, BCN', Icon: MapIcon},
@@ -141,6 +143,10 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
+        name: 'Tailwind CSS',
+        level: 10,
+      },
+      {
         name: 'Next.js',
         level: 8,
       },
@@ -152,30 +158,26 @@ export const skills: SkillGroup[] = [
         name: 'Astrojs',
         level: 7,
       },
-      {
-        name: 'Tailwind CSS',
-        level: 9,
-      },
     ],
   },
   {
     name: 'Backend development',
     skills: [
-       {
+      {
         name: 'REST API',
         level: 10,
       },
       {
-        name: 'Nest.js',
+        name: 'NestJs',
         level: 9,
-      },
-      {
-        name: 'PHP',
-        level: 6,
       },
       {
         name: 'Express.js',
         level: 6,
+      },
+      {
+        name: 'PHP',
+        level: 4,
       },
     ],
   },
@@ -184,20 +186,41 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'MySQL & PostgreSQL',
-        level: 8,
+        level: 9,
+      },
+      {
+        name: 'Clickhouse',
+        level: 7,
       },
       {
         name: 'MongoDB',
         level: 6,
       },
       {
+        name: 'ElasticSearch',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Message brokers',
+    skills: [
+      {
         name: 'Redis',
+        level: 7,
+      },
+      {
+        name: 'gRPC',
         level: 6,
       },
       {
-        name: 'ElasticSearch',
+        name: 'Kafka',
         level: 5,
-      },   
+      },
+      {
+        name: 'RabbitMQ',
+        level: 5,
+      },
     ],
   },
   {
@@ -209,7 +232,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Git',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Docker',
@@ -259,9 +282,21 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Crossnetics',
-    description: 'Fullstack developer at CROSSNETICS.',
+    description: 'Developed marketing web platform utilizing advanced AI algorithms and web3 technologies.',
     url: 'https://crossnetics.io/',
     image: porfolioImage5,
+  },
+  {
+    title: 'Kodix Agency',
+    description: 'Developed backend architecture of the CMS for AURUS automotive manufacturer.',
+    url: 'https://kodix.ru/',
+    image: portfolioImage8,
+  },
+  {
+    title: 'Nexusverse',
+    description: 'Developed and supported high-load Telegram Mini Apps using various technologies.',
+    url: 'https://www.nexusverse.io/',
+    image: portfolioImage7,
   },
 ];
 
@@ -314,27 +349,32 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'August 2024 - January 2025',
-    location: 'RedNeck Studio',
+    location: 'Nexusverse',
     title: 'Middle+ Fullstack Developer',
     content: (
       <ul className="list-disc">
         <li>
-          Managed and supported numerous high-load Telegram Mini Apps, ensuring stability and scalability for over 3 million users.
+          Managed and supported numerous high-load Telegram Mini Apps, ensuring stability and scalability for over 3
+          million users.
         </li>
         <li>
-          Developed multiple administrative panels using the Refine framework, enabling game designers to work with data without direct database access.
+          Developed multiple administrative panels using the Refine framework, enabling game designers to work with data
+          without direct database access.
         </li>
         <li>
-          Integrated over 10 advertising systems, supporting both frontend (React, TypeScript) and backend (C#/.NET) implementations.
+          Integrated over 10 advertising systems, supporting both frontend (React, TypeScript) and backend (C#/.NET)
+          implementations.
         </li>
         <li>
-          Implemented gRPC Streaming to efficiently handle large file uploads, breaking them into smaller batches for seamless data transfer.
+          Implemented gRPC Streaming to efficiently handle large file uploads, breaking them into smaller batches for
+          seamless data transfer.
         </li>
         <li>
           Optimized SQL queries and transactions to minimize database locks and enhance performance under high loads.
         </li>
         <li>
-          Played a key role in the "DONT" project by utilizing modern frontend technologies to create intuitive and performant interfaces.
+          One of the leading front end developers on the "DONOT" project, utilized modern frontend technologies to
+          create intuitive and performant interfaces.
         </li>
       </ul>
     ),
@@ -346,20 +386,18 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc">
         <li>
-          Designed and developed a highly customizable CMS for the AURUS automotive manufacturer, streamlining the configuration management process.
+          Designed and developed a highly customizable CMS for the AURUS automotive manufacturer, streamlining the
+          configuration management process.
         </li>
         <li>
-          Engineered backend architecture using NestJS, TypeScript, and TypeORM, ensuring scalability and maintainability.
+          Engineered backend architecture using NestJS, TypeScript, and TypeORM, ensuring scalability and
+          maintainability.
         </li>
-        <li>
-          Optimized PostgreSQL database structure to support complex data operations efficiently.
-        </li>
+        <li>Optimized PostgreSQL database structure to support complex data operations efficiently.</li>
         <li>
           Automated parsing and editing of large JSON configurations (over 5,000 lines), reducing manual workload.
         </li>
-        <li>
-          Integrated third-party services, including email marketing solutions, enhancing the CMS's capabilities.
-        </li>
+        <li>Integrated third-party services, including email marketing solutions, enhancing the CMS's capabilities.</li>
       </ul>
     ),
   },
@@ -458,7 +496,7 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'SainDev',
-      text: 'Had great time with Vrezh. Easy to work with, stubborn in a good way, and a very fun guy in general.',
+      text: 'Had great time with Vrezh. Easy to work with, a bit stubborn, but a very fun guy in general.',
       image: 'https://avatars.githubusercontent.com/u/1188424?v=4',
     },
     {
