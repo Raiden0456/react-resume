@@ -110,7 +110,7 @@ export const aboutData: About = {
       text: 'London School of Economics(LSE London), Higher School of Economics(HSE Moscow)',
       Icon: AcademicCapIcon,
     },
-    {label: 'Employment', text: 'CROSSNETICS', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'Self-employed', Icon: OfficeBuildingIcon},
   ],
 };
 
