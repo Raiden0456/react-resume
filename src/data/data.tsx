@@ -161,13 +161,13 @@ export const skills: SkillGroup[] = [
   {
     name: 'Backend development',
     skills: [
-      {
-        name: 'Nest.js',
-        level: 8,
+       {
+        name: 'REST API',
+        level: 10,
       },
       {
-        name: 'REST API',
-        level: 7,
+        name: 'Nest.js',
+        level: 9,
       },
       {
         name: 'PHP',
@@ -191,13 +191,13 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
-        name: 'ElasticSearch',
-        level: 5,
+        name: 'Redis',
+        level: 6,
       },
       {
-        name: 'Redis',
-        level: 4,
-      },
+        name: 'ElasticSearch',
+        level: 5,
+      },   
     ],
   },
   {
@@ -213,7 +213,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Docker',
-        level: 5,
+        level: 6,
       },
       {
         name: 'AWS',
@@ -312,6 +312,57 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+  {
+    date: 'August 2024 - January 2025',
+    location: 'RedNeck Studio',
+    title: 'Middle+ Fullstack Developer',
+    content: (
+      <ul className="list-disc">
+        <li>
+          Managed and supported numerous high-load Telegram Mini Apps, ensuring stability and scalability for over 3 million users.
+        </li>
+        <li>
+          Developed multiple administrative panels using the Refine framework, enabling game designers to work with data without direct database access.
+        </li>
+        <li>
+          Integrated over 10 advertising systems, supporting both frontend (React, TypeScript) and backend (C#/.NET) implementations.
+        </li>
+        <li>
+          Implemented gRPC Streaming to efficiently handle large file uploads, breaking them into smaller batches for seamless data transfer.
+        </li>
+        <li>
+          Optimized SQL queries and transactions to minimize database locks and enhance performance under high loads.
+        </li>
+        <li>
+          Played a key role in the "DONT" project by utilizing modern frontend technologies to create intuitive and performant interfaces.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'May 2024 - August 2024',
+    location: 'Kodix agency',
+    title: 'Middle+ Backend Engineer & Architect',
+    content: (
+      <ul className="list-disc">
+        <li>
+          Designed and developed a highly customizable CMS for the AURUS automotive manufacturer, streamlining the configuration management process.
+        </li>
+        <li>
+          Engineered backend architecture using NestJS, TypeScript, and TypeORM, ensuring scalability and maintainability.
+        </li>
+        <li>
+          Optimized PostgreSQL database structure to support complex data operations efficiently.
+        </li>
+        <li>
+          Automated parsing and editing of large JSON configurations (over 5,000 lines), reducing manual workload.
+        </li>
+        <li>
+          Integrated third-party services, including email marketing solutions, enhancing the CMS's capabilities.
+        </li>
+      </ul>
+    ),
+  },
   {
     date: 'March 2023 - August 2024',
     location: 'CROSSNETICS',
