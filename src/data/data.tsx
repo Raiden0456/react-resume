@@ -20,7 +20,7 @@ import porfolioImage3 from '../images/portfolio/hl-landing.png';
 import portfolioImage8 from '../images/portfolio/kodix.png';
 import portfolioImage7 from '../images/portfolio/nexusverse.png';
 import porfolioImage4 from '../images/portfolio/yaghtprogroup-landing.png';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/profilepic2.jpg';
 import testimonialImage from '../images/testimonial.jpg';
 import heroVideo from '../videos/cozy-room.mp4';
 import {
@@ -79,7 +79,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/Resume_V6.pdf',
+      href: '/assets/Resume_V7.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
