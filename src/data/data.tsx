@@ -17,6 +17,7 @@ import portfolioImage6 from '../images/portfolio/classy-english-anna.png';
 import porfolioImage5 from '../images/portfolio/crossnetics-landing.png';
 import porfolioImage2 from '../images/portfolio/facestellar.png';
 import porfolioImage3 from '../images/portfolio/hl-landing.png';
+import portfolioImage9 from '../images/portfolio/JACE.png';
 import portfolioImage8 from '../images/portfolio/kodix.png';
 import portfolioImage7 from '../images/portfolio/nexusverse.png';
 import porfolioImage4 from '../images/portfolio/yaghtprogroup-landing.png';
@@ -58,7 +59,7 @@ export const SectionId = {
   Testimonials: 'testimonials',
 } as const;
 
-export type SectionId = typeof SectionId[keyof typeof SectionId];
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
@@ -297,6 +298,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Developed and supported high-load Telegram Mini Apps using various technologies.',
     url: 'https://www.nexusverse.io/',
     image: portfolioImage7,
+  },
+  {
+    title: 'World of JACE',
+    description: 'Blazing fast landing page for a luxury linen brand using AstroJs.',
+    url: 'https://www.worldofjace.com/',
+    image: portfolioImage9,
   },
 ];
 
